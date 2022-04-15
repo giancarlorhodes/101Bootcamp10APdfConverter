@@ -13,7 +13,7 @@ namespace _101Bootcamp10APdfConvertNet
     {
         static void Main(string[] args)
         {
-
+             /// http://www.pdfsharp.net/wiki/HelloWorld-sample.ashx
             // Create a new PDF document
             PdfDocument document = new PdfDocument();
             document.Info.Title = "Created with PDFsharp";
@@ -25,10 +25,10 @@ namespace _101Bootcamp10APdfConvertNet
             XGraphics gfx = XGraphics.FromPdfPage(page);
 
             // Create a font
-            PdfSharp.Drawing.XFont font = new PdfSharp.Drawing.XFont("Verdana", 20, XFontStyle.BoldItalic);
+            PdfSharp.Drawing.XFont font = new PdfSharp.Drawing.XFont("Verdana", 14, XFontStyle.BoldItalic);
 
             // Draw the text
-            gfx.DrawString("Hello, World! I am using PdfSharp !!!", font, XBrushes.Black,
+            gfx.DrawString("I am using PdfSharp !!!, .NET 4.8, Core .NET 5 thru exception", font, XBrushes.Black,
             new XRect(0, 0, page.Width, page.Height),
             XStringFormats.Center);
 
