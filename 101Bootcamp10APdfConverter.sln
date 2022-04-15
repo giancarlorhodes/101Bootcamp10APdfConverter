@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32210.238
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "101Bootcamp10APdfConverter", "101Bootcamp10APdfConverter\101Bootcamp10APdfConverter.csproj", "{6F19B2AF-A79D-4CA8-BEDE-BE56B15A05FA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "101Bootcamp10APdfConvertNet", "101Bootcamp10APdfConvertNet\101Bootcamp10APdfConvertNet.csproj", "{616EF4A1-41AC-486D-8814-0D107FBDA73C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6F19B2AF-A79D-4CA8-BEDE-BE56B15A05FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F19B2AF-A79D-4CA8-BEDE-BE56B15A05FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F19B2AF-A79D-4CA8-BEDE-BE56B15A05FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F19B2AF-A79D-4CA8-BEDE-BE56B15A05FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{616EF4A1-41AC-486D-8814-0D107FBDA73C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{616EF4A1-41AC-486D-8814-0D107FBDA73C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{616EF4A1-41AC-486D-8814-0D107FBDA73C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{616EF4A1-41AC-486D-8814-0D107FBDA73C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {46624422-F940-4B2E-AB34-4C9F8937475D}
+	EndGlobalSection
+EndGlobal
