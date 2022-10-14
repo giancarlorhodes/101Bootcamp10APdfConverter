@@ -1,47 +1,28 @@
 ﻿using System;
 using System.Diagnostics;
 using System.IO;
-using PdfSharp;
-using PdfSharp.Drawing;
-using PdfSharp.Pdf;
-using PdfSharp.Pdf.IO;
+using PdfSharpCore.Drawing;
+using PdfSharpCore.Fonts;
+using PdfSharpCore.Pdf;
+using PdfSharpCore.Utils;
+
 
 namespace _101Bootcamp10APdfConverter
 {
     internal class Program
     {
+
+        // https://github.com/ststeiger/PdfSharpCore
         static void Main(string[] args)
         {
+            Console.WriteLine("Type of the text you want converted to a PDF here ");
+            string _text = Console.ReadLine();
 
-            // Create a new PDF document
-            PdfDocument document = new PdfDocument();
-            document.Info.Title = "Created with PDFsharp";
-
-            // Create an empty page
-            PdfPage page = document.AddPage();
-
-            // Get an XGraphics object for drawing
-            XGraphics gfx = XGraphics.FromPdfPage(page);
-
-
-            // Create a font
-            PdfSharp.Drawing.XFont font = new PdfSharp.Drawing.XFont("Verdana", 20, XFontStyle.BoldItalic);
-           
-
-            // Draw the text
-            gfx.DrawString("Hello, World!", font, XBrushes.Black,
-            new XRect(0, 0, page.Width, page.Height),
-            XStringFormats.Center);
-
-
-
-            // Save the document...
-            const string filename = "HelloWorld.pdf";
-            document.Save(filename);
-
-            // ...and start a viewer.
-            Process.Start(filename);
-
+            string _fileAndPath = @"D:\Temp\PDFCreateExampleCore.pdf";
+            PdfSharpCoreConverter converter = new PdfSharpCoreConverter();
+            converter.Convert(_text, _fileAndPath);
+            Console.WriteLine("File location: {0}", _fileAndPath);
+            Console.ReadKey();
         }
     }
 }

@@ -9,6 +9,9 @@ using System.Threading.Tasks;
 
 namespace _101Bootcamp10APdfConvertNet
 {
+
+    // converting text to html
+
     internal class Program
     {
         static void Main(string[] args)
@@ -28,7 +31,7 @@ namespace _101Bootcamp10APdfConvertNet
             PdfSharp.Drawing.XFont font = new PdfSharp.Drawing.XFont("Verdana", 14, XFontStyle.BoldItalic);
 
             // Draw the text
-            gfx.DrawString("I am using PdfSharp !!!, .NET 4.8, Core .NET 5 thru exception", font, XBrushes.Black,
+            gfx.DrawString("I am using PdfSharp !!!, .NET 4.8, Core .NET 5 thru exception lkjalksdfj lakj lkfj alksdjflkaj slkdf lkajsdlkf alkjsdlkfaj s", font, XBrushes.Black,
             new XRect(0, 0, page.Width, page.Height),
             XStringFormats.Center);
 
@@ -41,7 +44,8 @@ namespace _101Bootcamp10APdfConvertNet
             //XStringFormats.Center);
 
             // Save the document...
-            const string filename = "HelloWorld.pdf";
+            //const string filename = "HelloWorld.pdf";
+            const string filename = @"C:\Temp\PDFCreateExample.pdf";
             document.Save(filename);
 
             // ...and start a viewer.
